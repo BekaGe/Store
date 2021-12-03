@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    border: 2px solid black;
+    padding: 3px 18px;
+    font-weight: 600;
+    font-size: 22px ;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+nav ul li :after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li:hover :after{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 100px 20px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    background: #ff523b;
+    display: inline-block;
+    color: #fff;
+    margin: 30px 0;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: grey;
+}
+.header{
+    background:  radial-gradient(rgb(255, 255, 255),rgb(192, 177, 177));
+    height: 100%;
+}
+.header .row{
+    margin-top: 60px
+}
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:  0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: "";
+    background: rgb(197, 91, 113);
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.banner{
+    background: url("../img/banner.jpeg") no-repeat fixed;
+    width: 100%;
+    min-width: 550px;
+    height: 350px;
+    background-size: cover;
+    margin-top: 100px; 
+}
+
+
